@@ -1,0 +1,14 @@
+{
+  "name": "Minecraft PaperMC Server",
+  "image": "mcr.microsoft.com/devcontainers/java:21",
+  "features": {
+    // Add any other features you might need, e.g., "ghcr.io/devcontainers/features/common-utils:2": {}
+  },
+  "forwardPorts": [25565], // Automatically forwards Minecraft's default port
+  "customizations": {
+    "vscode": {
+      "extensions": []
+    }
+  },
+  "postCreateCommand": "mkdir -p minecraft-server && cd minecraft-server && echo 'eula=true' > eula.txt" // Optional: Automate directory creation and EULA acceptance
+}
